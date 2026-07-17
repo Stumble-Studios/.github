@@ -1,60 +1,58 @@
 # Stumble Studios
 
-> Studio privato. Progetto personale di apprendimento — nessuna finalità commerciale.
+> Private studio. Personal learning project — no commercial purpose.
 
-Benvenuto nello spazio di lavoro di **Stumble Studios**. Qui vive **StumbleVerse**: un progetto
-privato con cui, partendo dallo studio di un gioco multiplayer, ci si allena a costruire un
-**ecosistema completo** attorno a un gioco — backend, autenticazione, tornei, bot e dashboard.
+Welcome to the workspace of **Stumble Studios**. This is where **StumbleVerse** lives: a private
+project built to practice designing a **complete ecosystem** around a multiplayer game — backend,
+authentication, tournaments, bots and dashboards.
 
-## La missione
+## Mission
 
-Ricostruire, sulla base della versione **0.73**, un ecosistema **StumbleVerse SDK** completo:
-non "clonare meglio" un gioco, ma usare un motore multiplayer come **infrastruttura** su cui
-progettare sistemi che nel gioco base non esistono. L'obiettivo vero non è un prodotto: è
-**imparare a programmare sistemi reali** — API, servizi, persistenza, anti-cheat, interfacce —
-end-to-end.
+To rebuild, on top of the **0.73** base, a complete **StumbleVerse SDK** ecosystem: not to "clone a
+game better", but to use a multiplayer engine as **infrastructure** on which to design systems that
+don't exist in the base game. The real goal isn't a product — it's **learning to program real
+systems** end-to-end: APIs, services, persistence, anti-cheat, interfaces.
 
-Ogni pezzo che costruiamo (backend, motore tornei, bot, negozio, dashboard) viene **conservato e
-documentato qui**, così che il lavoro sia riproducibile e portabile da una versione del gioco
-all'altra.
+Every piece we build (backend, tournament engine, bots, shop, dashboards) is **stored and documented
+here**, so the work stays reproducible and portable from one version of the game to the next.
 
-## Cosa è, e cosa non è
+## What it is, and what it isn't
 
-**È:**
-- Un progetto **privato** e **personale**, per studio ed esercizio.
-- Un modo per imparare architetture reali costruendo cose che funzionano davvero.
-- Basato su **valuta di gioco (gems)**, mai denaro reale.
+**It is:**
+- A **private**, **personal** project, for study and practice.
+- A way to learn real architectures by building things that actually work.
+- Based on **in-game currency (gems)**, never real money.
 
-**Non è:**
-- Un prodotto commerciale, né qualcosa destinato alla distribuzione.
-- Affiliato, sponsorizzato o approvato da terzi. StumbleVerse è un progetto indipendente di
-  Stumble Studios.
-- Un archivio di codice sorgente di terzi: qui si documentano e si costruiscono **i nostri
-  sistemi**; il gioco base è oggetto di studio, non materiale da ripubblicare.
+**It is not:**
+- A commercial product, nor anything meant for distribution.
+- Affiliated with, sponsored by, or endorsed by any third party. StumbleVerse is an independent
+  project by Stumble Studios.
+- An archive of third-party source code: what we document and build here are **our own systems**; the
+  base game is an object of study, not material to republish.
 
-## Cosa trovi nell'organizzazione
+## What you'll find in the organization
 
-| Ambito | Cosa contiene | Stato |
+| Area | Contents | Status |
 |---|---|---|
-| **Documentazione** | `stumbleverse-docs` — architettura, tornei, backend, migrazione, idee | ✅ attivo |
-| **Backend** | Cloudflare Worker + D1: auth Discord, tornei, negozio nomi, pannelli admin | ✅ vivo su `api.babsport.com` |
-| **Sistema tornei** | Motore bracket, quorum anti-cheat, aggancio Photon/Quantum, UI | ✅ funzionante |
-| **Bot Discord** | Annunci tornei, iscrizioni, notifiche, ruoli premio | 🧭 in progettazione |
-| **Dashboard web** | Pagine torneo pubbliche, portale giocatore, statistiche | 🧭 in progettazione |
+| **Documentation** | `stumbleverse-docs` — architecture, tournaments, backend, migration, ideas | ✅ active |
+| **Backend** | Cloudflare Worker + D1: Discord auth, tournaments, name shop, admin panels | ✅ live at `api.babsport.com` |
+| **Tournament system** | Bracket engine, anti-cheat quorum, Photon/Quantum hook-up, UI | ✅ working |
+| **Discord bot** | Tournament announcements, sign-ups, notifications, prize roles | 🧭 in design |
+| **Web dashboard** | Public tournament pages, player portal, statistics | 🧭 in design |
 
-La documentazione tecnica di riferimento è in **[`stumbleverse-docs`](https://github.com/Stumble-Studios/stumbleverse-docs)**.
+The technical reference documentation lives in **[`stumbleverse-docs`](https://github.com/Stumble-Studios/stumbleverse-docs)**.
 
-## Principi di lavoro
+## Working principles
 
-- **Privato per default.** I repo sono privati; niente viene esposto pubblicamente senza una ragione.
-- **Niente segreti nel codice.** Client secret, JWT secret e token vivono solo in variabili
-  d'ambiente / `wrangler secret`, mai committati.
-- **Si documentano comportamenti e contratti**, non percorsi di file effimeri: così il lavoro
-  sopravvive ai salti di versione del gioco.
-- **Solo gems.** Nessuna monetizzazione in denaro reale su questo progetto.
-- **Il confine dell'identità** (Stumble Studios / StumbleVerse) va sul **lavoro nostro** — backend,
-  bundle, sistemi originali — non sopra codice di studio altrui.
+- **Private by default.** Repos are private; nothing is exposed publicly without a reason.
+- **No secrets in code.** Client secret, JWT secret and tokens live only in environment variables /
+  `wrangler secret`, never committed.
+- **We document behaviors and contracts**, not ephemeral file paths — so the work survives the game's
+  version jumps.
+- **Gems only.** No real-money monetization on this project.
+- **The identity boundary** (Stumble Studios / StumbleVerse) goes on **our own work** — backend,
+  bundle, original systems — not on top of someone else's code we're studying.
 
 ---
 
-*Stumble Studios — spazio di lavoro privato. Ultimo aggiornamento: luglio 2026.*
+*Stumble Studios — private workspace. Last updated: July 2026.*
